@@ -2,15 +2,22 @@
 
 ## ⚠️ 重要提示
 
+### 關於 OpenClaw 和安卓
 OpenClaw 是一個 **Node.js 應用**，原生不支援安卓系統。然而，有**多種方式**可以在安卓設備上運行或存取 OpenClaw。
+
+### 關於 F-Droid 和 Termux
+**所有方案都需要 Termux**，而 **Termux 必須從 F-Droid 安裝**。Google Play 的版本已棄用。
+
+👉 **首先閱讀**：[F-Droid 完整安裝指南](./android-fdroid-guide.md)
 
 ---
 
 ## 📋 目錄
-1. [四種部署方案](#四種部署方案)
-2. [方案選擇指南](#方案選擇指南)
-3. [詳細部署步驟](#詳細部署步驟)
-4. [常見問題](#常見問題)
+1. [F-Droid 和 Termux 安裝](./android-fdroid-guide.md) - **從這裡開始**
+2. [四種部署方案](#四種部署方案)
+3. [方案選擇指南](#方案選擇指南)
+4. [詳細部署步驟](#詳細部署步驟)
+5. [常見問題](#常見問題)
 
 ---
 
@@ -76,13 +83,18 @@ OpenClaw 是一個 **Node.js 應用**，原生不支援安卓系統。然而，�
 
 ### 方案 1：Termux + Node.js
 
-#### 步驟 1：安裝 Termux
+#### 步驟 1：安裝 Termux（來自 F-Droid）
 
-1. 從 [F-Droid](https://f-droid.org/packages/com.termux/) 下載 Termux
-   - ✅ 推薦使用 F-Droid（官方倉庫）
-   - ❌ 不要使用 Google Play 的版本（已過期）
+⚠️ **重要**：必須使用 F-Droid 版本的 Termux，Google Play 版本已棄用且無法工作。
 
-2. 啟動 Termux，執行初始化
+**詳細步驟見**：[F-Droid 完整安裝指南](./android-fdroid-guide.md)
+
+**快速步驟**：
+1. 訪問 https://f-droid.org/
+2. 下載並安裝 F-Droid 應用
+3. 在 F-Droid 中搜索 "Termux"（官方版本）
+4. 點擊「Install」並等待完成
+5. 啟動 Termux 應用
 
 #### 步驟 2：更新系統
 

@@ -1,5 +1,15 @@
 # 安卓部署 - 常見問題解答
 
+## 🚨 最重要的一點
+
+**❌ 不要使用 Google Play 的 Termux** - 已停止支援，無法工作
+
+**✅ 必須使用 F-Droid 的 Termux** - 官方維護，完全支援
+
+👉 **詳見**：[F-Droid 完整安裝指南](./android-fdroid-guide.md)
+
+---
+
 ## 🤔 基本問題
 
 ### Q1：OpenClaw 可以在安卓上運行嗎？

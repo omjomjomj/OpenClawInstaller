@@ -12,12 +12,36 @@
 
 ## 方案 A：使用 Termux（簡單）
 
-### 步驟 1：安裝 Termux（2 分鐘）
+### 步驟 1：安裝 Termux（3 分鐘）
 
-1. 打開 [F-Droid](https://f-droid.org/)
-2. 搜索 "Termux"
-3. 點擊「安裝」
-4. 啟動應用
+#### ⚠️ 重要提醒
+
+**不要用 Google Play 的 Termux**（已棄用）。必須使用 **F-Droid 版本**。
+
+#### 詳細步驟
+
+##### 1a. 安裝 F-Droid
+
+1. 在瀏覽器中訪問 [https://f-droid.org/](https://f-droid.org/)
+2. 點擊 **「Download F-Droid」** 下載 APK
+3. 提示「允許應用安裝此應用」時：
+   - 點擊「設定」
+   - 找到你的瀏覽器（如 Chrome）
+   - 勾選「允許此來源的應用」
+4. 返回並完成 F-Droid 安裝
+5. 等待 F-Droid 初始化（1-2 分鐘）
+
+**詳見**：[F-Droid 完整安裝指南](./android-fdroid-guide.md)
+
+##### 1b. 在 F-Droid 中搜索 Termux
+
+1. 打開 F-Droid 應用
+2. 點擊**搜索圖標**（放大鏡）
+3. 輸入 **「Termux」**
+4. 找到「Termux」（官方版本，開發者：「The Termux Project」）
+5. 點擊藍色「Install」按鈕
+6. 等待下載和安裝完成
+7. 完成後點擊「Open」啟動 Termux
 
 ### 步驟 2：一鍵安裝腳本（2 分鐘）
 
@@ -173,15 +197,16 @@ npm cache clean --force
 
 ---
 
-## 📱 推薦應用
+## 📱 推薦應用（全部在 F-Droid 中安裝）
 
-| 應用 | 用途 | 推薦度 |
-|------|------|--------|
-| **Chrome/Firefox** | 訪問應用 | ⭐⭐⭐⭐⭐ |
-| **Termux** | 運行服務 | ⭐⭐⭐⭐⭐ |
-| **Termux:Widget** | 快速啟動 | ⭐⭐⭐⭐ |
-| **Termux:Boot** | 自動啟動 | ⭐⭐⭐⭐ |
-| **Postman** | API 測試 | ⭐⭐⭐ |
+| 應用 | 用途 | 推薦度 | 備註 |
+|------|------|--------|------|
+| **F-Droid** | 應用商店 | ⭐⭐⭐⭐⭐ | 必需 - [安裝指南](./android-fdroid-guide.md) |
+| **Termux** | 運行 OpenClaw | ⭐⭐⭐⭐⭐ | **必需 - 須從 F-Droid 安裝** |
+| **Termux:Boot** | 自動啟動 | ⭐⭐⭐⭐ | 推薦 |
+| **Termux:Widget** | 快速啟動 | ⭐⭐⭐⭐ | 推薦 |
+| **Chrome/Firefox** | 訪問應用 | ⭐⭐⭐⭐⭐ | 任選其一 |
+| **Postman** | API 測試 | ⭐⭐⭐ | 可選 |
 
 ---
 
@@ -228,10 +253,26 @@ hostname -I
 
 ## 獲得幫助
 
-- 📖 [完整安卓指南](./android-deployment-guide.md)
+### 安裝相關
+- 📱 [F-Droid 完整指南](./android-fdroid-guide.md) - **安裝 F-Droid 和 Termux**
+- ❓ [F-Droid 常見問題](./android-fdroid-guide.md#常見問題)
+
+### OpenClaw 相關
+- 📖 [完整安卓部署指南](./android-deployment-guide.md)
+- ❓ [OpenClaw 常見問題](./android-faq.md)
 - 🔧 [故障排除](./android-deployment-guide.md#常見問題)
+
+### 官方資源
 - 📚 [Termux Wiki](https://wiki.termux.com/)
+- 🌐 [F-Droid 官網](https://f-droid.org/)
 - 💬 [GitHub Issues](https://github.com/miaoxworld/OpenClawInstaller/issues)
+
+---
+
+## ⚠️ 常見錯誤
+
+❌ **不要用 Google Play 的 Termux** - 已棄用，無法正常使用
+✅ **只用 F-Droid 的 Termux** - 官方維護，完整支援
 
 ---
 
